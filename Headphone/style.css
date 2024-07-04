@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "css section/header.css";
+@import "css section/specs.css";
+@import "css section/shop.css";
+@import "css section/buds.css";
+@import "css section/footer.css";
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #161616;
+     --hover-color: hsl(199, 79%, 58%);
+    --bg-color: #fff;
+    }
+/*scroll bar*/
+html::-webkit-scrollbar{
+    width: 0.6rem;
+    background: #2e2e2e;
+
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background: rgb(129, 129, 129)
+
+}
+    img {
+        width: 100%;
+    }
+
+    body {
+        color: var(--text-color);
+        }
+
+.main{
+    overflow-x: hidden;
+}
+section{
+    padding: 4rem 0;
+}
+
+.container{
+    max-width: 968px;
+    width:100%;
+    margin:auto;
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+@media(max-width:1080px){
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media(max-width:1080px){
+    section{
+        padding: 50px 0;
+}
+.home-text h1{
+    font-size: 3rem;
+}
+}
+
+@media(max-width:768px){
+    .logo img{
+        width: 30px;
+    }
+    #menu-icon{
+        display: initial;
+        z-index: 150;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right:0;
+        background: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0.5px 8px rgb(74, 202, 241);
+        clip-path: circle(0% at 50% 0);
+        transition: 0.5s;
+    }
+    .navbar a{
+        display: block;
+        padding: 11px;
+    }
+
+    .navbar.active{
+        clip-path: circle(144% at 50% 0);
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.875rem;
+    }
+    .btn{
+        padding: 15px 16px; 
+    }
+    .heading{
+        font-size: 2.4rem;
+    }
+}
+
+
+
+@media (max-width:684px){
+    .home-content,.specs-container,.buds-container{
+        grid-template-columns: 1fr;
+
+    }
+    .buds-text{
+        padding: 1.4rem;
+    }
+    .home-content{
+        min-height: 540px;
+    }
+    .specs-img{
+        padding-top: 2rem;
+    }
+    .shop-container{
+        grid-template-columns: repeat(2,164px);
+        gap:1rem;
+    }
+}
+
+
+@media(max-width:360px){
+    .nav{
+        padding: 4px;
+    }
+
+    .home-text h1{
+        font-size: 1.8rem;
+    }
+
+.heading{
+    font-size: 2rem;
+}
+.shop-container{
+    grid-template-columns: repeat(2,144px);
+}
+}
+
+
+
+

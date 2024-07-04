@@ -1,0 +1,89 @@
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo img{
+    width: 41px;
+    padding:2px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    background:black;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.navbar a:hover{
+    color: rgb(76, 170, 247);
+}
+
+.home-content{
+    min-height: 640px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:3rem;
+}
+
+.home-text h1{
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+}
+
+.home-text p{
+    margin-bottom: 1rem;
+}
+
+
+/* for js*/
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 2px 4px rgb(88, 176, 248);
+    transition: 0.2s;
+}
+
+.logo img:hover{
+    background:var(--hover-color);
+    border-radius: 170%;
+}
+.btn{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 16px 24px;
+    border-radius: 0.4rem;
+}
+
+.btn .bx{
+    font-size: 1.4rem;
+}
+.btn:hover{
+    background:var(--hover-color);
+}
